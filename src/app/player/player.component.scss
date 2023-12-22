@@ -1,0 +1,25 @@
+@import './../../styles.scss';
+
+.player {
+    @include dFlex($jc: left, $g: 16px);
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    width: 280px;
+    height: 60px;
+    background-color: cadetblue;
+
+    >span {
+        font-size: 32px;
+    }
+
+    >img {
+        padding-left: 20px;
+        height: 50px;
+        width: 40px;
+    }
+}
+
+.player-active {
+    background-color: antiquewhite !important;
+    margin-right: 40px;
+}
